@@ -1,0 +1,10 @@
+RAG bedeutet Retrieval-Augmented Generation und besteht aus zwei Schritten.
+Schritt 1 ist Retrieval: Das System sucht relevante Textstellen aus einer Wissensbasis.
+Schritt 2 ist Generation: Ein LLM generiert eine Antwort basierend auf den gefundenen Texten.
+Embeddings sind mathematische Vektoren die die Bedeutung von Text als Zahlen darstellen.
+Aehnliche Texte haben aehnliche Vektoren und liegen im Vektorraum nah beieinander.
+FAISS ist eine Vektordatenbank von Meta die schnelle Aehnlichkeitssuche ermoeglicht.
+Chunking bedeutet das Aufteilen von Dokumenten in kleinere Textstuecke fuer die Verarbeitung.
+Die Chunk-Groesse beeinflusst die Qualitaet: zu klein verliert Kontext, zu gross wird ungenau.
+Ein Retriever durchsucht die Vektordatenbank und gibt die relevantesten Chunks zurueck.
+LangChain verbindet LLM, Retriever und Vektordatenbank zu einer funktionierenden Pipeline.

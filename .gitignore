@@ -1,0 +1,5 @@
+venv/
+faiss_index/
+__pycache__/
+index_status.json
+*.pyc

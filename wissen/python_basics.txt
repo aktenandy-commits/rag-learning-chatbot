@@ -1,0 +1,10 @@
+Python ist eine Programmiersprache, die 1991 von Guido van Rossum entwickelt wurde.
+Python ist besonders beliebt für Datenanalyse, Machine Learning und Webentwicklung.
+Eine Variable in Python speichert einen Wert, zum Beispiel: name = "Andreas".
+Listen in Python werden mit eckigen Klammern erstellt: zahlen = [1, 2, 3, 4, 5].
+Eine for-Schleife wiederholt Code fuer jedes Element: for x in zahlen: print(x).
+Funktionen werden mit def definiert: def gruss(name): return f"Hallo {name}".
+RAG steht fuer Retrieval-Augmented Generation und kombiniert Suche mit KI-Textgenerierung.
+ChromaDB ist eine Vektordatenbank, die Texte als mathematische Vektoren speichert.
+LangChain ist ein Framework, das verschiedene KI-Komponenten miteinander verbindet.
+Ollama ermoeglicht es, grosse Sprachmodelle lokal auf dem eigenen Computer auszufuehren.

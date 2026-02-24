@@ -1,0 +1,16 @@
+Kapitel 5 aus Chip Huyens AI Engineering Buch behandelt Prompt Engineering.
+Ein Prompt ist die Anweisung die du einem LLM gibst um eine bestimmte Antwort zu bekommen.
+Gute Prompts haben klaren Kontext, konkrete Beispiele und ein gewuenschtes Ausgabeformat.
+Ein System-Prompt definiert die Rolle und das Verhalten des LLMs fuer die gesamte Konversation.
+Ein User-Prompt ist die eigentliche Frage oder Aufgabe die der Nutzer stellt.
+Few-Shot Prompting bedeutet dem LLM Beispiele zu geben damit es das Muster versteht und anwendet.
+Zero-Shot Prompting bedeutet das LLM bekommt keine Beispiele und muss die Aufgabe allein loesen.
+Chain-of-Thought Prompting fordert das LLM auf Schritt fuer Schritt zu denken bevor es antwortet.
+Das verbessert die Qualitaet bei komplexen Aufgaben wie Mathe oder logischem Denken.
+Temperatur steuert wie kreativ oder deterministisch das LLM antwortet.
+Niedrige Temperatur wie 0.1 gibt praezise wiederholbare Antworten fuer Fakten und Code.
+Hohe Temperatur wie 0.9 gibt kreativere und variablere Antworten fuer Texte und Ideen.
+Prompt-Templates sind wiederverwendbare Vorlagen mit Platzhaltern fuer variable Inhalte.
+Der RAG-Chatbot nutzt ein Prompt-Template das Kontext und Frage als Platzhalter hat.
+Output-Parsing bedeutet dem LLM ein bestimmtes Format vorzugeben wie JSON oder Markdown.
+Prompt Engineering ist oft der schnellste und guenstigste Weg ein LLM fuer eine Aufgabe anzupassen.

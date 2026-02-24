@@ -1,0 +1,13 @@
+Kapitel 1 aus Chip Huyens AI Engineering Buch erklaert die Grundlagen von AI Engineering.
+AI Engineering ist der Prozess Anwendungen mit vortrainierten Foundation Models zu bauen.
+Foundation Models sind grosse vortrainierte Modelle wie GPT, Llama, Gemma oder Claude.
+Der Unterschied zu klassischem ML: man trainiert nicht selbst sondern nutzt fertige Modelle.
+Der AI Engineering Stack besteht aus Model Layer, Orchestration Layer und Application Layer.
+Model Layer: Das LLM selbst zum Beispiel Llama 3.2 das lokal mit Ollama laeuft.
+Orchestration Layer: Frameworks wie LangChain die LLM mit Tools und Daten verbinden.
+Application Layer: Die fertige Anwendung wie unser RAG-Chatbot den der Nutzer bedient.
+APIs machen LLMs als Service verfuegbar - man schickt einen Request und bekommt eine Antwort.
+Ollama bietet eine lokale API auf Port 11434 die genauso funktioniert wie Cloud-APIs.
+Evaluation ist entscheidend: je mehr KI eingesetzt wird desto wichtiger wird das Testen.
+AI Engineering senkt die Einstiegshuerde: auch ohne ML-Erfahrung kann man KI-Anwendungen bauen.
+Der Model-as-a-Service Ansatz hat KI von einer Spezialdisziplin zu einem Entwicklungstool gemacht.

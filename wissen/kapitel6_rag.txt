@@ -1,0 +1,20 @@
+Kapitel 6 aus Chip Huyens AI Engineering Buch behandelt RAG und Agents.
+RAG steht fuer Retrieval-Augmented Generation und loest ein grosses Problem: LLMs wissen nur was im Training war.
+Mit RAG kann ein LLM auf externes Wissen zugreifen das nicht im Modell gespeichert ist.
+RAG besteht aus zwei Schritten: erst Retrieval (suchen) dann Generation (antworten).
+Im Retrieval-Schritt durchsucht ein Retriever eine Wissensbasis nach relevanten Textstellen.
+Im Generation-Schritt bekommt das LLM die gefundenen Textstellen als Kontext und generiert daraus eine Antwort.
+Die Wissensbasis besteht aus Dokumenten die in kleine Stuecke (Chunks) aufgeteilt werden.
+Chunks werden durch Embeddings in mathematische Vektoren umgewandelt und in einer Vektordatenbank gespeichert.
+Bei einer Frage wird die Frage ebenfalls in einen Vektor umgewandelt und mit den gespeicherten Vektoren verglichen.
+Die aehnlichsten Vektoren zeigen auf die relevantesten Textstellen - das ist Vektor-Aehnlichkeitssuche.
+Term-basierte Retriever wie BM25 und Elasticsearch suchen nach Wortbereinstimmungen und sind einfacher zu implementieren.
+Embedding-basierte Retriever verstehen die Bedeutung von Text und koennen auch Synonyme und aehnliche Konzepte finden.
+Der k-Wert bestimmt wie viele Chunks der Retriever zurueckgibt - zu wenige verpassen Kontext, zu viele verwirren das LLM.
+Chunk-Groesse ist wichtig: zu kleine Chunks verlieren den Zusammenhang, zu grosse Chunks sind ungenau bei der Suche.
+Chunk-Overlap bedeutet dass sich Chunks ueberlappen damit kein Kontext an den Schnittstellen verloren geht.
+RAG ist besonders nuetzlich fuer Chatbots, Wissensdatenbanken, Code-Assistenten und Recherche-Tools.
+RAG braucht kein teures Finetuning - man aktualisiert einfach die Dokumente in der Wissensbasis.
+Die Qualitaet eines RAG-Systems haengt hauptsaechlich von der Qualitaet des Retrievers ab.
+RAG kann als Spezialfall eines Agents gesehen werden bei dem der Retriever ein Tool ist das das Modell nutzt.
+Ein Vorteil von RAG gegenueber Finetuning ist dass RAG kein teures Neutrainieren des Modells braucht und das Wissen einfach durch Aktualisierung der Dokumente erweitert werden kann.
